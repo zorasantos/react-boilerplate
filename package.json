@@ -12,7 +12,8 @@
     "test:watch": "yarn test --watch",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
-    "pwa": "cross-env NODE_ENV=production yarn build"
+    "pwa": "cross-env NODE_ENV=production yarn build",
+    "generate": "yarn plop --plopfile ./generator/plopfile.js"
   },
   "husky": {
     "hooks": {
@@ -57,6 +58,7 @@
     "jest": "^27.0.6",
     "jest-styled-components": "^7.0.4",
     "lint-staged": "^11.0.0",
+    "plop": "^2.7.4",
     "prettier": "2.3.2",
     "typescript": "^4.3.5"
   }
